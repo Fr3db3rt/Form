@@ -9,6 +9,6 @@ Add-Type -AssemblyName System.Drawing
 	$mainForm.backcolor = "Khaki"
 	$mainForm.Name = "mainForm"
 	$mainForm.Text = "LD System Wartungs Tool (ALPHA 2.0)"
-	#$global:$mainForm.Icon="C:\Windows\System32\msconfig.exe"
-	#$global:$mainForm.Topmost = $true
+	#$mainForm.Icon="C:\Windows\System32\msconfig.exe"
+	#$mainForm.Topmost = $true
 $mainForm.ShowDialog()
