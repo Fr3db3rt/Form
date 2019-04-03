@@ -1,6 +1,6 @@
 #tabPages
 	$ti = 0
-	$tabsCol = @("Gainsboro","Khaki")
+	$tabsCol = @("Gainsboro","Khaki","Bisque")
 	$temp = @()
 	
 	("System","Veeam","WSUS").
@@ -10,9 +10,10 @@
 	write-host "--- " $temp[$ti]
 	$_ = New-Object Windows.Forms.TabPage
 	$_.backcolor = ($tabsCol[$ti])
-	$_.Text = "$_temp"
-	$_.ToolTipText = $tabs[$ti]
+	$_.Text = $temp[$ti]
+	$_.ToolTipText = $temp[$ti]
 	$tabControl.Controls.Add($_)
-	$tab[$ti] = $_
+	$temp[$ti] = $_
 	$ti++
 }
+
