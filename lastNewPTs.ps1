@@ -2,7 +2,7 @@ cls
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
-write-host "=== #mainForm"
+write-host "`n=== #mainForm"
 	$mainForm = New-Object Windows.Forms.Form
 	$mainForm.StartPosition = "CenterScreen"
 	$mainForm.Size = "1024,768"
@@ -13,7 +13,7 @@ write-host "=== #mainForm"
 	#$mainForm.Icon="C:\Windows\System32\msconfig.exe"
 	#$mainForm.Topmost = $true
 
-write-host "=== #tabControl"
+write-host "`n === #tabControl"
 	$tabControl = New-object Windows.Forms.TabControl
 	$tabControl.Alignment = "Top" #Bottom, Left, Right, Top
 	$tabControl.Appearance = "FlatButtons" #Buttons, FlatButtons, Normal
@@ -24,7 +24,7 @@ write-host "=== #tabControl"
 	$tabControl.ShowToolTips = "true"
 $mainForm.Controls.Add($tabControl)
 
-write-host "=== #tabPages"
+write-host "`n   === #tabPages"
 	$ti = 0
 	$tabsCol = @("Gainsboro","Khaki","Bisque")
 	$temp = @()
