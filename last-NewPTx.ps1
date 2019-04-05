@@ -26,7 +26,7 @@ write-host "=== #tabPage System"
 	$MachineName.Location = "$tx,30"
 	$MachineName.Size = "130,20"
 	$MachineName.Text = "MachineName"
-$Systemx.Controls.Add($MachineName)
+$System.Controls.Add($MachineName)
 	$tx += 10
 	$MachineName.Location = "$tx,30"
 $System.Controls.Add($MachineName)
